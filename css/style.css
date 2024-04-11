@@ -6,8 +6,9 @@
 }
 
 body{
-  margin: 0px;
+  margin: 0px  !important;
   padding: 0px;
+  background-color: var(--cinza-hover) !important;
 }
 main{
   background-color: var(--cinza-hover);
@@ -17,12 +18,57 @@ header{
   color: white;
 }
 
+.myDiv{
+  margin: 123px 0px 140px 0px;
+}
+
+.text-nav{
+  font-family: var(--fonte-padrao);
+  font-weight: 800 !important;
+}
+
 .tipografia{
   font-family: var(--fonte-padrao);
   font-size: 50px;
   font-weight: 800;
   line-height: 60.51px;
   text-align: left;
+}
+
+.inputTipografia{
+  background-color: var(--cinza-hover) !important;
+}
+
+.textTipografia{
+  font-family: var(--fonte-padrao);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30.26px;
+  text-align: left;
+}
+
+.tipografiaDoTexto{
+  font-family: var(--fonte-padrao);
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 24.2px;
+  text-align: left;
+}
+
+.pd-section{
+  margin-top: 463px;
+}
+.pd-div{
+  margin-bottom: 213px;
+}
+
+.border-dnc{
+  border: 1px solid;
+  border-color: var(--azul-dnc);
+}
+
+.bg-dnc{
+  background-color: var(--azul-dnc);
 }
 
 /* Footer */
