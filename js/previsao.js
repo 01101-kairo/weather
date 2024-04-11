@@ -1,3 +1,9 @@
+let dataAtual = new Date();
+let horaAtual = dataAtual.getHours();
+let horaFormatada = horaAtual.toString().padStart(2, '0');
+let temperatura = "num"
+console.log(horaFormatada)
+
 async function getPrevisao(){
   const latitude = document.querySelector('input#latitude').value
   const longitude = document.querySelector('input#longitude').value
@@ -6,9 +12,10 @@ async function getPrevisao(){
     const data = await response.json()
     console.log(data)
     document.getElementById('previsao').innerHTML = ""
-    for (let index = 0; index < data.hourly.temperature_2m.length; index++) {
-      document.getElementById('previsao').innerHTML += `<div class="mt-4">${data.hourly.time[index]} - ${data.hourly.temperature_2m[index]}</div>`
+    for (let index = 0; index <= horaAtual; index++) {
+      temperatura = data.hourly.temperature_2m[index]
     }
+      document.getElementById('previsao').innerHTML = `<span> ${temperatura}° C</span>`
   } catch (error){
     alert(error.message)
   }
