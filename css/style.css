@@ -1,0 +1,53 @@
+:root{
+  --azul-dnc: #0C70F2;
+  --preto-dnc: #303030;
+  --cinza-hover: #F2F2F2;
+  --fonte-padrao: 'Inter';
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+main{
+  background-color: var(--cinza-hover);
+}
+header{
+  background-color: var(--azul-dnc);
+  color: white;
+}
+
+.tipografia{
+  font-family: var(--fonte-padrao);
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 60.51px;
+  text-align: left;
+}
+
+/* Footer */
+footer{
+  width:100%;
+  background-color:var(--azul-dnc);
+}
+
+footer>div{
+  height:35px;
+  display:flex;
+  justify-content: flex-end;
+  margin:0px;
+  /* padding:10px */
+}
+
+footer>div>a{
+  font-family: var(--fonte-padrao);
+  font-size: 18px;
+  font-weight: 600;
+  color:white;
+  text-decoration: none;
+  padding: 5px;
+}
+
+footer>div>a:first-child{
+  border-right: 3px solid white;
+}
