@@ -18,6 +18,35 @@ header{
   color: white;
 }
 
+@media (min-width: 600px){
+  .tabela {
+    display:grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tabela >div:first-child{
+    border-top-left-radius:12px;
+    border-top-right-radius:12px;
+  }
+  .tabela >div:last-child{
+    border-bottom-left-radius:12px;
+    border-bottom-right-radius:12px;
+  }
+}
+
+@media (max-width: 600px){
+  .tabela {
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .tabela >div:first-child{
+    border-top-left-radius:12px;
+    border-bottom-left-radius:12px;
+  }
+  .tabela >div:last-child{
+    border-top-right-radius:12px;
+    border-bottom-right-radius:12px;
+  }
+}
 .myDiv{
   margin: 123px 0px 140px 0px;
 }
@@ -49,7 +78,7 @@ header{
 
 .tipografiaDoTexto{
   font-family: var(--fonte-padrao);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 800;
   line-height: 24.2px;
   text-align: left;
